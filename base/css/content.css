@@ -1,0 +1,71 @@
+@charset "euc-kr";
+
+/* 컨텐츠 내용에서 사용하는 기본형태  =========================== */
+
+/* 컨텐츠 내용에서 사용하는 기본 타이틀 */
+.cont_title1 {padding:3px 5px;color:#FFF;background:#50bfe4;font-weight:bold;font-size:100%;}
+
+/* dd 가 여러개 있는거, 불릿 나오게 하기 */
+.dlView1 {margin-top:10px;}
+.dlView1 dt {line-height:350%;}
+.dlView1 dd {margin-top:5px;padding-left:8px;background:url(/images/common/icon01.gif) 0% 50% no-repeat; line-height:120%}
+.dlView1 dd.list-ul {background:url(/images/common/icon01.gif) 0px 5px no-repeat;}
+
+.dlView1 dd ul { margin-top:8px;line-height:150%;list-style:none;padding-left:15px;
+					background:url(/images/common/icon02.gif) 0px 0px no-repeat;}
+.dlView1 dd ul li { background:none;}
+
+
+/* dd 가 하나만 있는거, 불릿 안나오게 하기 */
+.dlView2 {margin-top:10px;}
+.dlView2 dt {line-height:350%;}
+.dlView2 dd {margin-top:5px;padding-left:0px;}
+
+/* 컨텐츠 내용에서 사용하는 기본형태  끝=========================== */
+
+/* 컨텐츠 내용에서 사용하는 테이블01 */
+table.wanted td { 	
+	border-bottom:1px solid #c3c3c3 ;
+	
+	padding:5px 10px ;
+	line-height:18px;	
+}
+
+table.wanted .trBold {
+	BORDER-TOP: #858585 2px solid;/*상단색상*/
+	border-bottom:1px solid #c3c3c3 ;
+	font-size:11px;
+	font-color:#959595;
+	background-color:#fff;
+	height:20px
+}
+table.wanted .tr {
+
+	font-color:#404040;
+
+}
+
+/* 컨텐츠 내용에서 사용하는 테이블02 */
+table.wanted01 td { 	
+	border-bottom:1px solid #d5d5d5 ;
+	
+	padding:5px 10px ;
+	line-height:18px;	
+}
+
+table.wanted01 .trBold {
+	BORDER-TOP: #d5d5d5 1px solid;/*상단색상*/
+	border-bottom:1px solid #d5d5d5 ;
+	font-size:11px;
+	font-color:#959595;
+	background-color:#fff;
+	height:20px
+}
+table.wanted .tr {
+
+	font-color:#404040;
+
+}
+
+
+

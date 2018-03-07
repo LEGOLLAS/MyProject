@@ -1,0 +1,15 @@
+@charset "euc-kr";
+
+@import url(base.css);
+@import url(common.css);
+@import url(Layout.css);
+
+#pageMain {clear:both;background:#FFF url(../images/main/bg.gif) top left;}
+
+#mainLayout {width:1000px !important;width:1015px;height:529px;margin:0px auto;}
+#mainLayout div {width:75px;float:left;height:100%;}
+#mainLayout iframe {}
+
+
+#mainLayout .mainL1 {width:75px;}
+#mainLayout .mainL2 {width:774px !important;width:785px;}

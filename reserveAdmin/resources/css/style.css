@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+/** {margin:0;padding:0;font-family: 'Nanum Gothic', sans-serif; font-weight: 400;}*/
+*:first-child+html{height:auto;margin:0;padding:0;}
+
+body,p,h1,h2,h3,h4,h5,h6,menu,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button{margin:0;padding:0}
+html,body{/*overflow:hidden;*/height:100%;-ms-content-zooming:none;-ms-touch-action:none;word-break:break-all;-ms-word-break:break-all}
+body,input,textarea,select,button,table,pre{font-family: 'Nanum Gothic', sans-serif; font-weight: 400; }
+body{ font-size:12px;}
+
+img,fieldset{border:0}
+a:hover,a:active{text-decoration:underline}
+a,a:link{text-decoration:none}
+button,label{cursor:pointer}
+textarea{overflow:auto}
+menu,ul,ol{list-style:none}

@@ -1,0 +1,289 @@
+@charset "utf-8";
+
+
+#contBody {
+    clear: both;
+    width: 1200px;
+    margin: 0px auto;
+    min-height: 900px;
+}
+
+#leftmenuArea {
+	float:left;
+	width:20%;
+	}
+
+#leftmenuArea .bigTitle {
+	width:242px;
+	height:91px;
+	background:url("/reserveAdmin/resources/images/main/menu_title.png") no-repeat;
+	margin-bottom:7px;
+}
+
+
+
+#leftmenuArea .leftmenu_UL {
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+	line-height:200%;
+}
+
+/*left 메뉴 CSS hover */
+#leftmenuArea .leftmenu_UL li span {
+	padding-left:20px;
+	display:block;
+	font-weight:bold;
+	margin-bottom: 4px;
+	width:242px;
+	height:40px
+	font-size:13px;
+	background:url("/reserveAdmin/resources/images/main/menu_nomal_bg.png") no-repeat;
+}
+#leftmenuArea .leftmenu_UL li span:hover{
+	background:url("/reserveAdmin/resources/images/main/menu_hover_bg.png") no-repeat;
+}
+
+a:link { text-decoration: none; color: #595959;}
+a:visited { text-decoration: none; color: #595959;}
+a:hover { text-decoration: none; color: #595959;}
+a:active { text-decoration: none; color: #595959;}
+
+
+
+#contentArea {
+    float: right;
+    width: 78%;
+    border: 1px solid #CCC;
+    min-height: 900px;
+    padding: 2px;
+}
+
+#contentArea #subContent .contentArea {
+    padding:10px;
+}
+
+#contentArea table, tr, td {
+	font-size:13px;
+}
+
+#contentArea #subTitle {
+	padding-top:10px;
+	padding-left:10px;
+	padding-bottom:10px;
+	font-weight:bold;
+}
+
+/*검색창*/
+#contentArea #searchArea {
+	padding-top:10px;
+	padding-bottom:10px;
+	text-align:left;
+}
+
+
+#contentArea #searchArea select {
+    height: 30px;
+}
+
+#contentArea #searchArea input {
+	height:28px;
+	border:1px solid #CCC;
+}
+
+#contentArea .btn_submit {
+    background: #faa61a;
+    border: 1px solid #faa61a;
+    color: white;
+    height: 30px;
+    cursor: pointer;
+}
+
+#contentArea .btn_insert {
+	background:#faa61a;
+	border:1px solid #faa61a;
+	color:white;
+	height:30px;
+	cursor:pointer;
+}
+
+#contentArea #insertArea {
+	padding-top:10px; padding-bottom:10px;
+	text-align:right;
+}
+
+#contentArea #insertButtonArea {
+	text-align:center;
+}
+
+
+/* 리스트 뷰 부분 */
+#listArea table{
+	border-top:2px solid #3887d6;
+}
+#listArea table th{
+    color: #1f5e8f;
+    background: #f0f5fb;
+		border:1px solid #CCC;
+}
+#listArea table tr td{
+
+	border:1px solid #CCC;
+}
+*
+.footer {
+width:100%;
+clear:both; 
+padding: 20px 0; 
+background-color: #f2f2f2;
+border-top:1px solid #a4a2a2;
+font-size:13px;
+}
+.container{
+
+width:500px;
+margin:0 auto;
+}
+
+
+INPUT{
+	border:0;
+		background:none;
+
+}
+.col-md-offset-3 {
+	width:1200px;
+	margin:0px auto;
+}
+
+
+a {
+	
+	text-decoration:none;
+	border:0px;
+}
+
+
+
+/*header*/
+#topbar{height:40px;background-color:#69c8c7;}
+
+#adminHeader { width: 1200px;  margin: 0px auto;    height: 105px;}
+
+#adminHeader .adminHeader01 {
+	width:242px;
+	height:105px;
+	float:left;	
+	background:url("/reserveAdmin/resources/images/main/logo.png") no-repeat;
+}
+#login_info{
+margin:0 auto;
+width:1200px;
+height:40px;
+
+}
+
+.user_name{
+display:block;
+padding-top:12px;
+font-weight:bold;
+color:#ffffff;
+float:left;
+}
+
+
+.logout_btn{
+
+float:right;
+display:block;
+border:1px solid #ff0000;
+width:94px; height:33px; margin:5px 0 0 15px; padding:0px;
+background:url("/reserveAdmin/resources/images/main/btn_logout1.png") no-repeat;
+cursor: pointer;
+}
+
+.adminHeader02 {	float:right; height:50px; }
+
+
+/* 탑 */
+#logintopArea{width:100%;	min-width:1200px;	height:384px;	position:relative;
+	background-color:#fffdfa;	margin:0px auto;
+}
+
+/* 중간 */
+#loginAllArea {
+	padding-bottom:10px;
+	height:223px;
+	width:100%;
+	margin:0px auto;
+	min-width:1200px;
+	background-image:url("/reserveAdmin/resources/images/login/bg_login.png");
+	clear:both;
+
+	text-align:center;
+}
+
+#logintoptop_bg1{
+position:absolute;
+margin-top:126px;
+width:747px;
+height:256px;
+
+background-image: url("/reserveAdmin/resources/images/login/top_bg.png");
+background-repeat: no-repeat;
+
+float:left;
+}
+
+#logintoptop_logo{
+margin-left:50%;
+left:-207px;
+
+margin-top:220px;
+position:absolute;
+width:413px;
+height:127px;
+background-image: url("/reserveAdmin/resources/images/login/logo_log.png");
+background-repeat: no-repeat;}
+
+/* 폼필드 */
+#loginArea{width:100%;min-width:1200px;}
+
+#fromBox {	width:560px;	height:220px;	margin:0px auto;}
+
+#login_title{margin-top:42px;isplay:block;width:225px;height:86px;float:left;	
+background-image:url("/reserveAdmin/resources/images/login/login_title.png");}
+
+/*  form 필드 */
+#adminLoginForm{margin-top:47px;	float:left;	width:313px;	text-align:right;}
+
+#member_id{margin-left:14px;padding-left: 45px;width:268px;margin-bottom:3px;
+background-image:url("/reserveAdmin/resources/images/login/id_bg.png");
+background-repeat: no-repeat;}
+
+
+#member_password{margin-bottom:15px;padding-left: 45px;width:268px;
+background-image:url("/reserveAdmin/resources/images/login/pw_bg.png");
+background-repeat: no-repeat;}
+
+.form-control {	 width: 313px;	 height:36px;}
+
+#loginButton {
+	display:block;
+	background-image:url("/reserveAdmin/resources/images/login/btn_login.png");
+	background-repeat: no-repeat;
+	width:134px; height:45px;
+	cursor:pointer;
+	font-weight:bold;
+	font-size:16px;
+}
+
+
+#login_table{	width:313px;}
+#login_table td{	float:right;}
+
+#bottom_area{background-color:#fffdfa;width:100%;height:392px;}
+
+#bottom_bg{float:right;display:block;width:774px;height:392px;
+background-image:url("/reserveAdmin/resources/images/login/bottom_bg.png");
+background-repeat: no-repeat;}

@@ -1,0 +1,46 @@
+@charset "euc-kr";
+
+/* 전체메뉴 */
+#AllMenu {position:absolute;width:100%;z-index:10;background:#FFF;} 
+.AllOver {margin-top:5px;border-bottom:5px solid #757575;}
+.AllOut {margin-top:0px;border-bottom:0px;}
+
+#AllMenuBtn {position:absolute;text-align:center;width:100%;margin:0px auto;}
+
+#AllMenuLayout {display:none;width:1000px;height:500px;margin:0px auto;
+											background:#FFF url(../images/top/all_bg.gif) top left repeat-y;}
+#AllMenuLayout dl {float:left;width:250px;}
+#AllMenuLayout dl dt {margin-left:2px;margin-bottom:20px;}
+#AllMenuLayout dl dd {font-size:120%;color:#40b9e1;font-weight:bold;padding:0px 10px;}
+#AllMenuLayout dl dd ul {list-style:none;margin-bottom:20px;}
+#AllMenuLayout dl dd ul li {display:inline;font-size:80%;font-weight:100;color:#666;}
+
+
+/* 최상단, 로고, 메뉴, 전체메뉴, 상단 LOGIN */
+#pageTop {} /* background:#FFF url(../images/top/bg1.gif) top left repeat-x;} */
+
+#pageTopLayout {width:1010px;height:87px;margin:0px auto;padding-top:5px;}	/* 상단 영역 */
+
+#pageTopLayout p {float:left;}		/* 로고 */
+
+#pageTopLayout div {float:right;padding-top:2px;text-align:right;}
+#pageTopLayout div ul {clear:both;list-style:none;}				/* 메인메뉴 */
+#pageTopLayout div ul li {display:inline;float:left;}
+
+
+/* 배너 */
+#pageBanner {} /* background:#FFF url(../images/copyright/bannerbg1.gif) top left repeat-x;} */
+#bannerLayout {width:1000px;height:53px;margin:0px auto;padding-top:20px;}
+#bannerLayout ul {list-style:none;}
+#bannerLayout ul li {display:inline;float:left;}
+ 
+ /* .selectBox {behavior:url('/css/selectbox.htc');} */
+#bannerLayout ul li select {
+	width:170px;height:20px;
+	background-color: #FFFFFF;
+	border: 1px solid #DFDFDF;
+}
+
+/* 카피라이트 */
+#copyright {background:url(/images/copyright/copy_bg.gif);}
+#copyLayout {width:1000px; height:100%; margin:0px auto;}

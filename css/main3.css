@@ -1,0 +1,48 @@
+@charset "euc-kr";
+
+@import url(base.css);
+
+.ul_inline {list-style:none;}
+.ul_inline li {display:inline;}
+
+
+#pageBody {background:#FFF;}
+
+#pageBodyL {height:529px;float:left;width:290px;border-left:1px solid #DDD;border-right:1px solid #DDD;}
+#pageBodyL ul {list-style:none;}
+#pageBodyL ul li {}
+
+/* 점선 라인 주기 */
+#pageBodyL .dotline {padding-bottom:1px;background:#FFF url(../images/common/line1.gif) bottom left repeat-x;}
+
+
+/* 열린공간 공지사항 */
+#ulNotice {list-style:none;padding-left:15px;}
+#ulNotice li {display:inline;float:left;padding-top:15px;}
+
+#divNotice {clear:both;margin:0px 15px;background:none;}
+#divNotice ul {display:none;}
+#divNotice ul li {border-bottom:1px solid #EFEFEF;padding-top:3px;}
+
+
+#pageBodyR {height:529px;margin-left:290px;}
+
+#pageBodyR ul {list-style:none;}
+#pageBodyR ul li {}
+
+/*width:241px;height:132, 147, 143*/
+#pageBodyR #ul02_01 {height:115px;padding-top:17px;padding-left:82px;
+												background:#FFF url(../images/main3/02_01.gif) top left no-repeat;}
+#pageBodyR #ul02_01:hover {background:#FFF url(../images/main3/02_01_ov.gif) top left no-repeat;}
+
+#pageBodyR #ul02_02 {height:122px;padding-top:25px;padding-left:82px;
+												background:#FFF url(../images/main3/02_02.gif) top left no-repeat;}
+#pageBodyR #ul02_02:hover, #pageBodyR #ul02_02.ulOver {background:#FFF url(../images/main3/02_02_ov.gif) top left no-repeat;}
+
+#pageBodyR #ul02_03 {height:120px;padding-top:23px;padding-left:82px;
+												background:#FFF url(../images/main3/02_03.gif) top left no-repeat;}
+#pageBodyR #ul02_03:hover{background:#FFF url(../images/main3/02_03_ov.gif) top left no-repeat;}
+
+/*갤러리*/
+#pageBodyR .ulGallery{list-style:none;height:100px;border-top:1px solid #DDD;}		
+#pageBodyR .ulGallery li {float:left;display:inline;padding-top:15px;margin-right:1px;}

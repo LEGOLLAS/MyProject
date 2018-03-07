@@ -1,0 +1,52 @@
+@charset "euc-kr";
+
+/* 상단에 라인 색깔 넣기 */
+#pageTop {background:#FFF url(/images/top/bg1.gif) top left repeat-x;}
+
+/* 배너쪽에 라인 색깔 넣기 */
+#pageBanner {background:#FFF url(/images/copyright/bannerbg1.gif) top left repeat-x;}
+
+
+/* 서브컨텐츠 부분 */
+#pageCont {background:#FFF;background:#FFF url(/images/sub/bg_right.gif) top left repeat-x;}
+
+
+/* 서브 컨텐츠 왼쪽*/
+#contL {position:absolute;width:50%;min-width:500px;margin-left:-282px;z-index;-1;min-height:145px;text-align:right;
+					background:#FFF url(/images/sub/bg_left.gif) top left repeat-x;}
+
+
+/* 좌측메뉴 메뉴부분 */
+#contL ul {clear:both;list-style:none;float:right;background:#FFF url(/images/sub/bg.gif) top left repeat-y !important;background:none;}
+#contL ul li {}
+#contL ul li.height30 {height:30px;background:url(/images/sub/bg.gif) top right repeat-y;}
+
+/* 좌측메뉴 1단계 */
+#contL ul li dl {width:218px;}
+#contL ul li dl dt {text-align:left;}
+#contL ul li dl dt a {display:block;width:198px;height:28px;color:#999898;font-weight:bold;font-size:120%;padding:7px 0px 0px 20px;
+						background:#FFF url(/images/sub/tbg_out.gif) top left no-repeat;}
+#contL ul li dl dt a:hover, #contL .dtSelect
+						{color:#FFF;background:#FFF url(/images/sub/tbg_over.gif) top left no-repeat;}
+
+
+/* 좌측메뉴 2단계 */
+#contL ul li dl dd {text-align:left;}
+#contL ul li dl dd a {display:block;width:183px;height:25px;color:#999898;font-size:110%;padding:7px 0px 0px 35px;
+						background:#fff url(/images/sub/ddbg_out.gif) top left no-repeat;}
+#contL ul li dl dd a:hover, #contL .ddSelect
+						{background:#fff url(/images/sub/ddbg_over.gif) top left no-repeat;}
+
+
+/* 서브 컨텐츠 오른쪽 */
+#contLayout {width:1000px;margin:0px auto;min-height:500px;background:#FFF url(/base/images/common/cont_line.gif) top left repeat-y;}
+#contR {margin-left:218px;min-height:200px;background:#FFF url(/base/images/common/cont_bg.gif) top left no-repeat;}
+#contR {padding-left:35px;}
+
+#contSubject {margin-bottom:35px;}
+#contSubject p {margin-left:50px;height:17px;padding:5px;}	/* 컨텐츠 상단에 전체공지부분 */
+#contSubject ul {text-align:right;list-style:none;height:20px;padding-top:3px;}	/* 컨텐츠 상단에 현재 위치 */
+#contSubject ul li {display:inline;margin-right:10px;font-size:95%;}
+#contSubject span {clear:both;}	/* 컨텐츠 상단에 타이틀 부분 */
+
+#contView {}		/* 실제 컨텐츠 부분 */

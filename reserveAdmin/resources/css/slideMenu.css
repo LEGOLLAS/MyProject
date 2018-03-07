@@ -1,0 +1,71 @@
+
+
+#PageTopMenu {background: #3A96CB; height: 35px;}
+#PageTopMenu ul {text-align: center;}
+#PageTopMenu ul li {width:140px; padding-left: 0;}
+
+#PageTopMenu #MainMenu li a:hover {
+    color: #F2F2F2;
+    background: transparent;
+
+}
+
+#TopSlideMenu2{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    left: 0px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    display: none;
+    background:#FFF;
+    z-index: 10000;
+}
+
+#TopSlideMenu {
+    display: none;
+    position: absolute;
+/*            top: 110px;*/
+/*            background: #FFF;*/
+/*            border: 1px solid;*/
+    z-index: 10001;
+    border-top: none;
+/*    width: 960px;*/
+	width:1000px;
+    box-sizing: border-box;
+/*            opacity: 0.8;*/
+    height: 300px;
+}
+#TopSlideMenu ul{
+    list-style: none;
+    float: left;
+    width: 120px;
+    width: 151px;
+    margin-left: 10px;
+    height: 280px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+#TopSlideMenu ul li {    
+    display: block;
+    line-height: 20px;
+    margin-left: 0;
+    width: 95%;
+    height: 25px;
+    font-size: 13px;
+}
+
+#TopSlideMenu div {width: 100%;}
+#TopSlideMenu div ul {width: 100%; margin-top: 0; margin-left: 0;}
+#TopSlideMenu div li {width: 161px; float: left; height: 10px; padding-left: 0}
+#TopSlideMenu div li span {
+    display:none;
+    float: left;
+    margin-left: 65.5px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #3A96CB;
+}

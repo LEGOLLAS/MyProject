@@ -1,0 +1,46 @@
+@charset "euc-kr";
+
+@import url(base.css);
+
+.ul_inline {list-style:none;}
+.ul_inline li {display:inline;}
+
+
+
+#pageBody {background:#FFF;}
+
+#pageBodyL {height:529px;float:left;width:290px;border-left:1px solid #DDD;border-right:1px solid #DDD;}
+#pageBodyL ul {list-style:none;}
+#pageBodyL ul li {}
+
+/* 점선 라인 주기 */
+#pageBodyL .dotline {padding-bottom:1px;background:#FFF url(../images/common/line1.gif) bottom left repeat-x;}
+
+
+/* 열린공간 공지사항 */
+#ulNotice {list-style:none;padding-left:15px;}
+#ulNotice li {display:inline;float:left;padding-top:15px;}
+
+#divNotice {clear:both;margin:0px 15px;background:none;}
+#divNotice ul {display:none;}
+#divNotice ul li {border-bottom:1px solid #EFEFEF;padding-top:3px;}
+
+
+#pageBodyR {height:529px;margin-left:290px;}
+
+#pageBodyR p {}		/*사진*/
+
+/*교육매체지원*/
+#pageBodyR dl {float:left;width:228px;height:143px;
+								background:#FFF url(../images/main1/dlbg.gif) top left no-repeat;}	
+#pageBodyR dl:hover, #pageBodyR .dlOver
+{background:#FFF url(../images/main1/dlbg_ov.gif) top left no-repeat;}	
+
+#pageBodyR dl {padding-top:70px;}		/* 교육매체지원 위치잡기 */
+#pageBodyR dl dd {padding-left:20px;}
+
+#pageBodyR div {display:block;}	/*교양강의동, 기자재대여안내*/
+
+#pageBodyR ul {list-style:none;border-top:1px solid #DDD;margin:0px;padding:0px;}		/*갤러리*/
+#pageBodyR ul li {float:left;display:inline;padding-top:15px;margin-right:1px;}
+

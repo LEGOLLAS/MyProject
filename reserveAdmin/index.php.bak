@@ -1,0 +1,47 @@
+<?php
+	include_once($_SERVER['DOCUMENT_ROOT'] . "/reserveAdmin/include/db_conn.php");
+	
+	session_start();
+	
+	if(empty($_SESSION['memberId'])) {
+?>
+<script>
+window.onload = function() {
+	location.href = "/reserveAdmin/login.php";
+}
+</script>
+<? 
+	} else {
+		$sess_member_id = isset($_SESSION['memberId']) ? $_SESSION['memberId'] : "";
+
+		$member_query = "SELECT mb_name FROM reserve_member WHERE mb_id = '".$sess_member_id."' AND member_level = '10'";
+		
+		if (!$member_query) {
+			echo 'MySQL Error: ' . mysqli_error();
+			exit;
+		}
+		
+		$member_result_set = @mysqli_query($conn, $member_query);
+		$member_row = @mysqli_fetch_assoc($member_result_set);
+		
+		$member_name = $member_row['mb_name'];
+		
+		include_once($_SERVER['DOCUMENT_ROOT'] . "/reserveAdmin/include/header.php");
+?>
+<div>
+<?
+		include_once($_SERVER['DOCUMENT_ROOT'] . "/reserveAdmin/leftmenu.php");
+	}
+?>
+		<div id="contentArea">
+			<div id="subTitle">관리자 모드</div>
+			<div id="subContent" style="padding-left:5px;">
+				"제주 비자숲힐링센터 예약시스템" 관리자 모드에 오신 것을 환영합니다.
+			</div>
+		</div>
+	</div>
+</div>
+
+<?php
+	include_once("./include/footer.php");
+?>

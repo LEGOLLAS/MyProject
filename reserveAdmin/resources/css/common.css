@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+.labelHidden {display: none;}   /* input 의 label 태그 안보이게 하기 */
+.divBtnArea {text-align: center;padding:10px;}  /* 하단의 입력/수정/취소 등의 버튼만 놓이는 부분 */
+.eformView {display:inline;}
+.eformInput {display:none;}
+
+
+
+/* 페이지번호 보여지는 영역 */
+/*.classPageNo {width:100%;height:35px;padding:5px 0px;text-align:center;font-size:11px;}*/
+.classPageNo {width:100%;padding:5px 0px;text-align:center;font-size:11px;}
+/* 테이블 위의 타이틀 부분 */
+.TableTitle01 {font-size:20px; font-weight: bold; text-align: center;padding:10px 0px;}
+
+.title_01 {background:url(<?=$root?>/images/bt/title_bl.gif) no-repeat 0% 45%; padding-left:17px; font-size:14px; color:#1f5e8f;}
+
+.icon_01 {float:right; width:200px; text-align:right;}
+
+/* 테이블 스타일 - 리스트 1번 */
+/*.classTableBase {width:100%;clear:both;}
+    .classTableBase tr {}
+    .classTableBase tr:hover {color:#FFF;background:#614b32;cursor:pointer;padding:5px;margin:5px;}
+    .classTableBase tr:hover a {color:#FFF;}
+        .classTableBase tr th {padding:5px;text-align:center;}
+        .classTableBase tr th {color:#FFF;background:#76A6D6;}
+        .classTableBase tr td {padding:3px;text-align:center;}
+        .classTableBase tr td input {width:99%;border:1px solid #CCC;}
+        .classTableBase tr td .input35 {width:35px;}
+        .classTableBase tr td .input70 {width:70px;}*/
+
+input[type="button"].inputBtn, input[type="submit"].inputBtn {
+    width: auto;
+   
+   
+   
+    border-style: solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+		
+.classTableBase {width:100%;clear:both; border-top:#3887d6 2px solid;}
+    .classTableBase tr {}
+    .classTableBase tr:hover {color:#91b7de;background:#ededed;cursor:pointer;padding:5px;margin:5px;}
+    .classTableBase tr:hover a {color:#91b7de;}
+        .classTableBase tr th {padding:5px;text-align:center; font-weight:normal;}
+        .classTableBase tr th {color:#1f5e8f; background:#f0f5fb;}
+
+        .classTableBase tr td {color:#4c4c4c; padding:3px;text-align:center;}
+        .classTableBase .trbg td {background:#f6f6f7;}
+        .classTableBase .active td {background:#A6CAF0;}
+
+        .classTableBase tr td input[type="text"], .classTableBase tr td input[type="password"] {width:99%;border:1px solid #CCC;}
+        .classTableBase tr td input.NUM {text-align:right;}
+        .classTableBase tr td .input35 {width:35px;}
+        .classTableBase tr td .input70 {width:70px;}
+        
+        .classTableBase tr td.left {text-align:left;padding-left:10px;}
+        .classTableBase tr td.right {text-align:right;padding-right:5px;}
+        .classTableBase tr td.bgColor1 {background:#F6F6F7;}
+        .classTableBase tr td input[type="checkbox"] {width:auto;}
+
+/* 테이블 스타일 - 자세히 보기 1번 */
+/*.classTableBase2 {width:100%;}
+    .classTableBase2 tr th {padding:5px;text-align:center;}
+    .classTableBase2 tr th {color:#FFF;background:#76A6D6;}
+    .classTableBase2 tr td {padding:3px;}
+    .classTableBase2 tr td input {width:99%;}*/
+	
+/*.classTableBase2 {width:100%;}
+    .classTableBase2 tr th {padding:5px;text-align:center; color:#91b7de; background:#fcfdff;}
+    .classTableBase2 tr td {padding:3px;}
+    .classTableBase2 tr td input {width:99%; border:1px solid #CCC;}*/
+	
+.classTableBase2 {width:100%;clear:both; border-top:#3887d6 2px solid;}
+    .classTableBase2 tr th {padding:5px 30px;text-align:center; color:#1f5e8f; background:#f0f5fb; font-weight:normal; text-align:left;}
+	.classTableBase2 tr th.center {text-align:center;}
+
+    .classTableBase2 tr td {color:#4c4c4c; padding:3px 10px;}
+    .classTableBase2 tr td input {color:#4c4c4c; width:99%; border:1px solid #CCC;}
+	.classTableBase2 tr td select {color:#4c4c4c; font-size:12px; width:115px;}
+	.classTableBase2 tr td .radio {border:none;width:15px;}
+    .classTableBase2 tr td input[type="checkbox"] {width:auto;}
+
+
+.classTableBase3 {width:100%;clear:both; }
+    .classTableBase3 tr td {padding:0px 3px;border:1px solid #F4F4F4;}
+    .classTableBase3 tr td.left {text-align:left;}
+
+.classTableBase4 {width:100%;clear:both; border-top:#3887d6 2px solid;}
+    .classTableBase4 tr th {
+        width:100px;padding:5px 10px;
+        text-align:left;color:#1f5e8f;font-weight:normal;
+        background:#f0f5fb; 
+    }
+    .classTableBase4 tr th.center {text-align:center;}
+
+    .classTableBase4 tr td {min-width:100px;color:#4c4c4c; padding:3px 5px;}
+    .classTableBase4 tr td.center {text-align: center;}
+    .classTableBase4 tr td.left {text-align: left;}
+    .classTableBase4 tr td.right {text-align: right;}
+    .classTableBase4 tr td.title {font-size:150%;font-weight:bold;}
+    .classTableBase4 tr td.title2 {font-size:130%;font-weight:bold;}
+
+.classTableBaseSign {clear:both;float:right;margin:10px 0px;}
+    .classTableBaseSign tr th {padding:5px 10px;text-align:center; color:#666666; background:#EFEFEF; font-weight:normal; text-align:left;}
+    .classTableBaseSign tr td {height:50px;}
+        
+    
+.TableList {border-left:#000000 1px solid; border-top:#000000 1px solid; width:700px;}
+	.TableList th {border-right:#000000 1px solid; border-bottom:#000000 1px solid; padding:5px 10px; background:#CCCCCC;}
+	.TableList td {border-right:#000000 1px solid; border-bottom:#000000 1px solid; padding:5px 10px; text-align:center;}
+	.TableList input {width:90%;}
+
+/* ul 타입 */
+.ulType01 {list-style:none;}
+.ulType01 li {display:inline;
+}
+.ulType01 li a {
+    display:inline-block;font-size:11px;pading:2px 3px;
+    background:#FFF;border:1px solid #CCC;border-radius: 5px;
+}
+
+
+.Bill {width:100%;min-height:100%; background:#FFFFFF; color:#000000; line-height:16px;}
+.Bill dt {font-weight:bold;}
+.Bill li {padding-bottom:10px;}
+.BillingTable {border:#6cafda 2px solid; width:100%; font-weight:bold;}
+.BillingTable th {border:0px; border-top:#6cafda 2px solid; background:#6cafda; padding:5px; text-align:center;}
+.BillingTable td {border:0px;border-top:#6cafda 2px solid; padding:3px;}
+.BillingTable2 {border:#4f81bd 2px solid; width:100%; font-weight:bold;}
+.BillingTable2 th {border:0px; border-top:#4f81bd 2px solid; background:#d3dfee; padding:5px; text-align:center;}
+.BillingTable2 td {border:0px;border-top:#4f81bd 2px solid; padding:3px;}
+
+.BillingTable3 {width:90%;}
+.BillingTable3 th {border:0px; border-bottom:#808080 1px solid; padding:3px; text-align:center; font-weight:bold; background:none;}
+.BillingTable3 td {border:0px; padding:3px 15px;}
+
+
+#SmsForm {background:url(<?=$root?>/images/mobile_bg.png) no-repeat; width:246px; height:462px; padding:73px 0px 0px 28px;}
+
+/* 이미지 오버 */
+.bt {cursor:hand;}
+
+
+/* 탭형식 */
+.ulTab1 {list-style:none;padding-bottom:5px;float:left;}
+	.ulTab1 li {display:inline;float:left;}
+	.ulTab1 li a {
+		display:block;padding:3px 15px;font-weight:bold;
+		border:1px solid #75A8D7;
+		background:#F4F4F4;
+	}
+	.ulTab1 li a:hover, .ulTab1 li.active a {
+		color:#FFF;font-weight:bold;
+		background:#75A8D7;
+	}
+
+/* 타이틀 형식 */
+.divTitleView1 {padding:5px 0px;font-size:100%;font-weight:none;}
+.divTitleView1 .bold {font-size:120%;font-weight:bold;}
+
+/* 그룹명 CSS */
+.divGroupName {
+    padding:5px 0px;
+    font-size:120%;font-weight:bold;
+}
+
+.payform {border:#4c4c4c 2px solid; width:100%;}
+.payform th {padding:7px; color:#000000; background:none; border:#4c4c4c 1px solid;}
+.payform td {padding:5px; color:#000000; border:#4c4c4c 1px solid;}
+.payform .tcenter {text-align:center;}
+.payform .tright {text-align:right;}

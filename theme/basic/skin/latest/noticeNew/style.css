@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* SIR 지운아빠 */
+
+/* 새글 스킨 (latest) */
+.n_lt {position:relative;padding-top: 8px}
+.n_lt ul {margin:5px 0 5px 0;padding:0 10px 0 30px;list-style:square}
+.n_lt li {padding:10px 0 10px 0; color: #ddd;}
+.n_lt li a {padding-left: -10px; color: #333;}
+.n_lt li.no_item span {padding-left: -10px; color: #333;}

@@ -1,0 +1,44 @@
+@charset "euc-kr";
+
+@import url(base.css);
+
+.ul_inline {list-style:none;}
+.ul_inline li {display:inline;}
+
+
+#mainLayout {width:1015px;}
+#mainLayout .mainL2 {width:785px;}
+
+#pageBody {background:#FFF;}
+
+#pageBodyL {height:529px;float:left;width:290px;border-left:1px solid #DDD;border-right:1px solid #DDD;}
+#pageBodyL ul {list-style:none;}
+#pageBodyL ul li {}
+
+/* 점선 라인 주기 */
+#pageBodyL .dotline {padding-bottom:1px;background:#FFF url(../images/common/line1.gif) bottom left repeat-x;}
+
+
+
+/* 열린공간 공지사항 */
+#ulNotice {list-style:none;padding-left:15px;}
+#ulNotice li {display:inline;float:left;padding-top:15px;}
+
+#divNotice {clear:both;margin:0px 15px;background:none;}
+#divNotice ul {display:none;}
+#divNotice ul li {border-bottom:1px solid #EFEFEF;padding-top:3px;}
+
+
+#pageBodyR {height:529px;margin-left:290px;}
+
+#pageBodyR ul {list-style:none;padding:85px 0px 0px 20px;}
+#pageBodyR ul li {}
+
+#pageBodyR #ul03 ul {float:left;width:222px;height:122px;
+								background:#FFF url(../images/main2/02_03.gif) top left no-repeat;}
+#pageBodyR #ul03 ul:hover, #pageBodyR #ul03 ul.ul03Over 
+								{background:#FFF url(../images/main2/02_03_ov.gif) top left no-repeat;}
+
+#ul04 ul {margin-left:242px;width:220px;height:122px;
+								background:#FFF url(../images/main2/02_04.gif) top left no-repeat;}
+#ul04 ul:hover {background:#FFF url(../images/main2/02_04_ov.gif) top left no-repeat;}

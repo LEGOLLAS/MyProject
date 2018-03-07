@@ -1,0 +1,28 @@
+@charset "euc-kr";
+
+img {
+	border:0;
+/*vertical-align: middle;*/
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0px;
+	font-size: 11px;
+}
+
+table.wanted td { 	
+	border-bottom:1px solid #E4E4E4 ;
+	border-right:1px solid #E4E4E4 ;
+	padding:7px 4px ;	
+}
+
+
+.trBold {BORDER-TOP: #183f74 2px solid;}
+
+.line {background-color:#e3e3e3; height:1px; font-size:1px; font-family:'Tahoma'; line-height:1%;}
+.line1 {background-color:#305c8f; height:2px; font-size:1px; font-family:'Tahoma'; line-height:1%;}
+.line2 {background-color:#305c8f; height:3px; font-size:1px; font-family:'Tahoma'; line-height:1%;}
+.dott_line {
+	background-image: url(/images/comm/dott_line2.gif);
+	line-height: 1%;
+}

@@ -1,0 +1,10 @@
+/*
+user Page CSS Style
+
+
+Main Page
+*/
+
+.btn_logout {width: 67px; height: 23px; color: #FFF; border: 1px solid #B7B4B0; background: linear-gradient(to top, #9D7C56, #C1A17C); cursor: pointer;}
+input[type="button"].btns {width: auto; height: 19px; box-sizing: border-box; padding: 0 5px; line-height: 19px; font-size: 13px; border-radius: 3px; color: #ABABAB; border: 1px solid #DADADA; background: #FFF; cursor: pointer;}
+.btn_search_submit {height: 19px; padding: 0 3px; padding-left: 15px; width: auto; background: url(/images/bt/search_bt_back.gif) no-repeat; background-position: 2px 50%; border: 1px solid #DADADA; border-radius: 3px; color: #ABABAB;}
