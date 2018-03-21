@@ -319,7 +319,7 @@ $(document).ready(function(){
                     }
 
                     if($s_k == 0)
-                        echo '<ul data-no="'.$_k.'" class="submenu submenu_'.$_k.'">'.PHP_EOL;
+                        echo '<ul data-no="sub_'.$_k.'" class="submenu submenu_'.$_k.'">'.PHP_EOL;
             ?>
                 <li><a<?php if ($s_v['m_code'] == $now_menu_id) { echo ' class="active"'; } ?> href="<?php echo $s_v['me_link']; ?>" target="_<?php echo $s_v['me_target']; ?>"> <?php echo $s_v['me_name'] ?></a></li>
             <?php
