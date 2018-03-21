@@ -104,12 +104,11 @@ a:hover, a:focus, a:active {color:#000;text-decoration:none}
 .ts_up2 {font-size:1.3em !important}
 
 #top_menus {
-    /* float: left; */
     width: 1000px;
 }
 
 /* 상단 회원가입 등 링크 */
-#tnb {float:right;margin:0;padding:0;zoom:1;height:47px;}
+#tnb {float:right;margin:0;padding:0;zoom:1;height:47px; }
 #tnb:after {display:block;visibility:hidden;clear:both;content:""}
 #tnb li {
     color: #6e6e6e;
@@ -125,7 +124,7 @@ a:hover, a:focus, a:active {color:#000;text-decoration:none}
 #tnb img {margin-right:3px}
 
 /* 메인메뉴 */
-#gnb {position:relative;margin:0;background:#f1f1f1;clear:both;width: 100%;}
+#gnb {position:relative;margin:0;background:#f1f1f1;clear:both;width: 100%;left: 150px;top: 22px;}
 #gnb h2 {position:absolute;font-size:0;line-height:0;overflow:hidden}
 #gnb_1dul {margin:0 auto !important;padding:0;zoom:1;height: 45px;overflow: hidden;}
 #gnb_1dul:after {display:block;visibility:hidden;clear:both;content:""}
@@ -423,4 +422,3 @@ a.btn_admin:focus, a.btn_admin:hover {text-decoration:none}
 
 /* Mobile화면으로 */
 #device_change {display:block;margin:0.3em;padding:0.5em 0;border:1px solid #eee;border-radius:2em;background:#fff;color:#000;font-size:2em;text-decoration:none;text-align:center}
-

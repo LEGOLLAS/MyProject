@@ -73,24 +73,24 @@
 
 /* 메인메뉴 */
 #gnb {
-    position: relative;
+    padding-left: 0px;
     margin: 0;
-    background: #faa61a;
-    clear: both;
+    background: #ffffff;
     width: 100%;
 }
-#gnb h2 {position:absolute;font-size:0;line-height:0;overflow:hidden}
+#gnb h2 {position: topRight;font-size:0;line-height:0;overflow:hidden}
 #gnb_menu {margin:0 auto !important;padding:0;zoom:1;height: 45px;}
 #gnb_menu:after {display:block;visibility:hidden;clear:both;content:""}
 #gnb_menu > li {
-    position: relative;
+    position: topRight;
     float: left;
     border-right:0px;
     box-sizing: border-box;
 }
-#gnb_menu > li > a {font-size:14px;display:block;color:#ffffff;padding:0 18px;height:45px;font-weight:bold;line-height:45px;text-decoration:none;vertical-align:middle;}
+#gnb_menu > li > a {font-size:14px;display:block;color:black;padding:0 18px;height:45px;font-weight:bold;
+line-height:45px;text-decoration:none;vertical-align:middle;}
 #gnb_menu > li.sel > a, #gnb_menu > li > a:active, #gnb_menu > li > a:focus, #gnb_menu > li > a:hover,
-#gnb_menu > li.new > a 
+#gnb_menu > li.new > a
 {
     /*background: #007cbc;*/
     /*background: #545454;*/

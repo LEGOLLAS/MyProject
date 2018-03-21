@@ -15,7 +15,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 $(document).ready(function(){
 	$(".floorArea li").click(function(){
 		var indexVal = $(this).index();
-		
+
 		for(var i=0; i<4; i++) {
 			if(i == indexVal) {
 				$(".floorArea li:eq("+i+")").css("background-color", "#faa61a");
@@ -105,7 +105,7 @@ $(document).ready(function(){
 			}
 		}
 	});
-	
+
 	$(".soImage03_1").click(function(){
 		$("#bigImage03_1").attr("src", $(this).attr("src"));
 	});
@@ -121,19 +121,19 @@ $(document).ready(function(){
 	$(".soImage03_4").click(function(){
 		$("#bigImage03_4").attr("src", $(this).attr("src"));
 	});
-	
+
 	$(".soImage03_5").click(function(){
 		$("#bigImage03_5").attr("src", $(this).attr("src"));
 	});
-	
+
 	$(".soImage03_6").click(function(){
 		$("#bigImage03_6").attr("src", $(this).attr("src"));
 	});
-	
+
 	$(".soImage03_7").click(function(){
 		$("#bigImage03_7").attr("src", $(this).attr("src"));
 	});
-	
+
 	$("#imageArea04 .imageArea div").click(function(){
 		var indexVal = $(this).index();
 		for(var i=0; i<2; i++) {
@@ -241,12 +241,11 @@ $(document).ready(function(){
     <div id="hd_wrapper">
 		<div>
 			<div id="logo">
-				<a href="<?php echo G5_URL ?>"><img src="/images/logo.png" alt="<?php echo $config['cf_title']; ?>"></a>
+				<a href="<?php echo G5_URL ?>"><img src="/images/Logo.png" alt="<?php echo $config['cf_title']; ?>"></a>
 			</div>
 
 			<div id="topRight" style="float:right;">
 				<?php if ($is_member) {  ?>
-				<span class="nick"><?php echo get_text($member['mb_nick']) ?> 님이 로그인 하셨습니다.</span>
 				<?php if ($is_admin) {  ?>
 				<a href="<?php echo G5_ADMIN_URL ?>" style="margin-left:15px;"><b>관리자</b></a><span style="padding:0px 5px 0px 5px"> | </span>
 				<?php }  ?>
@@ -257,38 +256,38 @@ $(document).ready(function(){
 				<a href="/bbs/content.php?co_id=sitemap_introduce">SITEMAP</a>
 			</div>
 
+				<div style=" margin:0px auto; overflow:hidden;">
+					<div style="width:1000px; margin:0px auto;">
+						<div id="top_menus">
+							<nav id="gnb">
+								<h2>메인메뉴</h2>
+								<ul id="gnb_menu">
+									<?php
+									$sql = " select *
+												from {$g5['menu_table']}
+												where me_use = '1'
+												  and length(me_code) = '2'
+												order by me_order, me_id ";
+									$result = sql_query($sql, false);
+
+									$menu_code = array();
+									for ($i=0; $row=sql_fetch_array($result); $i++) {
+										$gnb_menus[] = $row;
+									?>
+									<li class="main_menu_<?php echo $i; ?>" data-no="<?php echo $i; ?>">
+										<a href="<?php echo $row['me_link']; ?>" target="_<?php echo $row['me_target']; ?>"><?php echo $row['me_name'] ?></a></li>
+									<?php
+									}
+									?>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+
 			<div style="clear:both; display:none;"></div>
 		</div>
     </div>
-	
-	<div style="width:100%; margin:0px auto; overflow:hidden; background:#faa61a;">
-		<div style="width:1000px; margin:0px auto;">
-			<div id="top_menus">	
-				<nav id="gnb">
-					<h2>메인메뉴</h2>
-					<ul id="gnb_menu">
-						<?php
-						$sql = " select *
-									from {$g5['menu_table']}
-									where me_use = '1'
-									  and length(me_code) = '2'
-									order by me_order, me_id ";
-						$result = sql_query($sql, false);
-
-						$menu_code = array();
-						for ($i=0; $row=sql_fetch_array($result); $i++) {
-							$gnb_menus[] = $row;
-						?>
-						<li class="main_menu_<?php echo $i; ?>" data-no="<?php echo $i; ?>"><a href="<?php echo $row['me_link']; ?>" target="_<?php echo $row['me_target']; ?>"><?php echo $row['me_name'] ?></a></li>
-						<?php
-						}
-						?>
-					</ul>
-				</nav>
-			</div>
-		</div>
-	</div>
-
     <div class="submenu_bg">
         <div id="submenu">
             <?php
@@ -345,43 +344,32 @@ $(document).ready(function() {
 </script>
 
 <!-- 콘텐츠 시작 { -->
-<?php 
-if (defined("_INDEX_")) { 
+<?php
+if (defined("_INDEX_")) {
     //메인일 경우 상단 배너를 띄운다
 ?>
 <div id="main_banner_zone">
     <div class="main_banner" section="content">
-        <div no="1" style="background-image: url(/images/main1.png);">&nbsp;</div>
-        <div no="2" style="background-image: url(/images/main2.png);">&nbsp;</div>
-        <div no="3" style="background-image: url(/images/main3.png);">&nbsp;</div>
-        <div no="4" style="background-image: url(/images/main4.png);">&nbsp;</div>
-        <div no="5" style="background-image: url(/images/main5.png);">&nbsp;</div>
-    </div>
-    <div class="photoNavi" section="navi">
-        <span no="1"></span>
-        <span no="2"></span>
-        <span no="3"></span>
-        <span no="4"></span>
-        <span no="5"></span>
+        <div no="1" style="background-image: url(/images/main.png);">&nbsp;</div>
     </div>
 </div>
-<?php } else { 
+<?php } else {
 	if($sub_me_sub_img == "") {
 		$sub_me_sub_img = "1";
 	}
 ?>
 <div id="sub_banner_zone">
     <div class="sub_banner" style="background: url(/images/sub_center0<?=$sub_me_sub_img?>.png) no-repeat 50% 50%;">
-		
+
     </div>
 </div>
 <?php } ?>
 <?php
-if (defined("_INDEX_")) { 
+if (defined("_INDEX_")) {
 ?>
 <div id="main_wrapper">
 <div style="background-color: #ffffff; ">
-    
+
 <div id="wrapper" style="margin: 0 auto; width: 1000px; zoom: 1; position: relative; background-color: #ffffff; z-index:9999999;">
     <div id="main_container">
 <?php } else { ?>
