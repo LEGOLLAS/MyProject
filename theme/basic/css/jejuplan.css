@@ -99,7 +99,7 @@ line-height:90px; text-decoration:none; vertical-align:middle;}
 {
     /*background: #007cbc;*/
     /*background: #545454;*/
-	text-decoration:none;color: #fff;
+	text-decoration:none;color: #faa61a;
 }
 #gnb_menu > li > div.arrow {
 display: none;
@@ -130,7 +130,7 @@ display: block;
 	display: none;
 }
 #submenu {
-    width: 1000px;
+    width: 1185px;
     margin: 0 auto;
     /* padding-left: 12px; */
 }
@@ -139,7 +139,7 @@ display: block;
 }
 #submenu > ul.submenu {
     box-sizing: border-box;
-    float: left;
+    float: right;
     padding-bottom: 20px;
 }
 
