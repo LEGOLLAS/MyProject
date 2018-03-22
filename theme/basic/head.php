@@ -259,9 +259,9 @@ $(document).ready(function(){
 				<div style=" margin:0px auto; overflow:hidden;">
 					<div style="width:1000px; margin:0px auto;">
 						<div id="top_menus">
-							<nav id="gnb">
+							<nav id="Second">
 								<h2>메인메뉴</h2>
-								<ul id="gnb_menu">
+								<ul id="Second_menu">
 									<?php
 									$sql = " select *
 												from {$g5['menu_table']}
@@ -272,7 +272,7 @@ $(document).ready(function(){
 
 									$menu_code = array();
 									for ($i=0; $row=sql_fetch_array($result); $i++) {
-										$gnb_menus[] = $row;
+										$Second_menus[] = $row;
 									?>
 									<li class="main_menu_<?php echo $i; ?>" data-no="<?php echo $i; ?>">
 										<a href="<?php echo $row['me_link']; ?>" target="_<?php echo $row['me_target']; ?>"><?php echo $row['me_name'] ?></a></li>
@@ -294,7 +294,7 @@ $(document).ready(function(){
             $type = basename($_SERVER['PHP_SELF'], '.php');
             $now_menu_id = empty($_REQUEST['bo_table']) ? $_REQUEST['co_id'] : $_REQUEST['bo_table'];
 
-            foreach ($gnb_menus as $_k=>$_v) {
+            foreach ($Second_menus as $_k=>$_v) {
                 $sql2 = " select *
                             from {$g5['menu_table']}
                             where me_use = '1'
@@ -339,7 +339,7 @@ $(document).ready(function(){
 <div id="programreq_info"></div>
 <script>
 $(document).ready(function() {
-    $('#gnb_menu>li[data-no=<?php echo $menu_no; ?>]').addClass('sel');
+    $('#Second_menu>li[data-no=<?php echo $menu_no; ?>]').addClass('sel');
 });
 </script>
 
